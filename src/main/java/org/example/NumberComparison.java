@@ -16,10 +16,11 @@ public class NumberComparison {
         double number2 = sc.nextDouble();
         if (number1 > number2) {
             System.out.println("The first number is larger than the second number");
-        } else {
-            System.out.println("The second number is larger than the first number");
+        } else if (number1 == number2) {
+            System.out.println("The first number is equal to the second number");
+       } else {
+                System.out.println("The second number is larger than the first number");
         }
-
         sc.close();
     }
 }
